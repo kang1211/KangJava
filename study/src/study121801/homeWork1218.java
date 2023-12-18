@@ -17,13 +17,5 @@ public class homeWork1218 {
 			}
 			System.out.print(rating[i]);	
 		}
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 }
