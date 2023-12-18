@@ -16,7 +16,6 @@ public class homeWork1218 {
 				k++;
 			}
 			System.out.print(rating[i]);
-			System.out.print("가나다");
 		}
 	}
 }
