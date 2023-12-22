@@ -10,8 +10,9 @@ public class java_method {
 		
 		mart_init(); // 제품등록이 첫번째 실행 되어야 한다.
 		
-		buyer_enroll();
-		view();
+		buyer 계림 = buyer_enroll(); // 구매자 등록 (buyer 클래스 객체 생성)
+		
+		buy();
 		
 	};
 	
@@ -22,6 +23,9 @@ public class java_method {
 		String name = scan.nextLine();
 		
 		buyer 전계림 = new buyer(num,name);
+		전계림.basket = new mart[1];
+		// 장바구니 공간 1개 생성 - 추후 제품을 장바구니에 담으면서 늘어나게 변경
+		return 전계림;
 	}
 	
 	static void view() {
