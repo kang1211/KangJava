@@ -7,6 +7,7 @@ public class buyer {
 	String member_name; //회원 이름
 	int expend; //지불금액
 	mart[] basket; //장바구니
+	int cnt;// 장바구니 수량
 
 	buyer(){}
 	buyer(int num,String name){
@@ -34,5 +35,16 @@ public class buyer {
 		
 		DecimalFormat df = new DecimalFormat("###,###");
 		return df.format(total)+"원";
-	};
+	}
+	
+	void basket_sizeUp() {
+		if(cnt>=1) {
+			mart[]temp = new mart[basket.length+1];
+			
+			for(int i=0; i<basket.length;i++){
+				temp[i] = basket[i]; // 기존 배열의 값을 새로운 배열에 넘겨주기
+			}
+			basket = temp; // 새로운 배열의 주소를 받아서 기존 배열 버리기
+		}
+	}
 }

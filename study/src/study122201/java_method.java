@@ -12,9 +12,28 @@ public class java_method {
 		
 		buyer 계림 = buyer_enroll(); // 구매자 등록 (buyer 클래스 객체 생성)
 		
-		buy();
+//		buy(); // 물건을 구매하기 위한 메서드, 더이상 구매하지않아야 메서드가 종료된다.
 		
 	};
+	
+	static void buy(buyer 계림) {
+	
+		while(true) {
+		view();
+		System.out.print("물건의 번호를 입력하세요(0-구매중단) : ");
+		int num = scan.nextInt();
+		if(num==0) break; // 구매중단하면 while문 종료
+		if(!(num>=1 && num<= mart_list.length))
+			continue; // 제품번호를 잘못입력시 다시 반복문 실행;
+		
+//		계림.basket_sizeup(); // 장바구니 크기 증가 - 두번째 물건을 담을때부터
+		계림.basket[계림.cnt] = mart_list[num-1];
+		계림.cnt++;
+		}
+	}
+	
+
+	
 	
 	static buyer buyer_enroll() {
 		
@@ -44,5 +63,8 @@ public class java_method {
 				new mart("샤토마니",30000,"와인",128),new mart("발비 소프라니",31000,"와인",1232)
 		};
 	}
+	
+}
+class a{
 	
 }
