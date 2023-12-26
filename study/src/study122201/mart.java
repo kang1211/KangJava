@@ -4,9 +4,9 @@ import java.text.DecimalFormat;
 
 public class mart {
 	String product_name; //제품명
-	int price; //제품가격
+	int price;  // 제품가격
 	String category; //제품 분류
-	int quan; //수량
+	int quan;  // 수량
 	
 	mart(){}
 	mart(String name, int price, String category, int quan){
@@ -18,7 +18,7 @@ public class mart {
 	
 	@Override
 	public String toString() {
-		String price_ = Integer.toString(price).replaceAll("\\B(?==(\\d{3})+(?!\\d))", ",");
+		String price_ = Integer.toString( price).replaceAll("\\B(?=(\\d{3})+(?!\\d))", "," );
 		DecimalFormat df = new DecimalFormat("###,###");
 		String quan_ = df.format(quan);
 		
