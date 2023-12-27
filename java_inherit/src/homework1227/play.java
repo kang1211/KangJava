@@ -11,15 +11,16 @@ public class play {
 		Rcgame truck = new truck();
 		
 		Scanner in = new Scanner(System.in);
-		
 		String i = in.nextLine();
+		
+		Rcgame car = new Rcgame(i);
+		car.Select();
 		
 //		sedan.cc();
 //		suv.cc();
 //		supercar.cc();
 //		truck.cc();
 		
-		System.out.println(i);
 		
 //		sedan.vw();
 //		suv.vw();

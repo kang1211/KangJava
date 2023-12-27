@@ -2,6 +2,20 @@ package homework1227;
 
 public class Rcgame {
 	
+	String name;
+	int cc;
+	int vw;
+	String color;
+	String maker;
+	
+	public void Select(String name) {
+		System.out.println("고르신 차량은 "+name+"입니다.");
+		System.out.println("배기량 : "+cc);
+		System.out.println("중량 : "+vw);
+		System.out.println("색상 : "+color);
+		System.out.println("메이커 : "+maker);
+	}
+	
 	public void cc(){};
 	public void vw(){};
 //	public abstract void color();

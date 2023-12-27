@@ -2,6 +2,14 @@ package homework1227;
 
 public class supercar extends Rcgame{
 	
+	public void Car(String supercar){
+		this.name = "supercar";
+		this.cc = 5999;
+		this.vw = 1585;
+		this.color="yellow";
+		this.maker="페라리";	
+	}
+	
 	@Override
 	public void cc() {
 		System.out.println("supercar의 배기량은 5999cc입니다.");

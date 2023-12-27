@@ -2,7 +2,13 @@ package homework1227;
 
 public class suv extends Rcgame {
 	
-	
+	public void Car(String suv){
+		this.name = "suv";
+		this.cc = 1998;
+		this.vw = 1755;
+		this.color="blue";
+		this.maker="현대";	
+	}
 	
 	@Override
 	public void cc(){
