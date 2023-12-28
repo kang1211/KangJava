@@ -2,6 +2,12 @@ package homework1227;
 
 public class truck extends Rcgame{
 	
+	String name = "truck";
+	int cc = 12700;
+	int vw = 5500;
+	String color = "gray";
+	String maker = "기아";
+	
 	public void Car(String truck){
 		this.name = "truck";
 		this.cc = 12700;

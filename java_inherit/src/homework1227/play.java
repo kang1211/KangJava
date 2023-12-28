@@ -13,8 +13,9 @@ public class play {
 		Scanner in = new Scanner(System.in);
 		String i = in.nextLine();
 		
-		Rcgame car = new Rcgame(i);
-		car.Select();
+		Rcgame car = new Rcgame();
+		car.Select(i);
+		
 		
 //		sedan.cc();
 //		suv.cc();
