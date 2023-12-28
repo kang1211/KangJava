@@ -18,7 +18,7 @@ public class java_poly {
 		
 		System.out.println(fan1.makedate);
 		System.out.println(((fan)fan1).makedate);
-		
+//		ss
 	}
 }
 
