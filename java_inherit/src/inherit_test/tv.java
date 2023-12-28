@@ -24,7 +24,7 @@ public class tv extends house{
 	}
 	
 	@Override
-	public void power() 
+	public void power() { 
 		onoff = !onoff;
 		System.out.println("Tv 전원 : "+ onoff);
 	}

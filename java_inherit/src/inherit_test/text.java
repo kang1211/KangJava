@@ -16,7 +16,7 @@ public class text {
 //		
 //		air.power();
 		
-		house t = new tv("LG");
+		house t = new tv();
 		house air = new aircon("캐리어");
 		
 		t.power();
