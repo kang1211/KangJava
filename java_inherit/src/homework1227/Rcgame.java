@@ -7,19 +7,23 @@ public class Rcgame {
 	int vw;
 	String color;
 	String maker;
-	
-	public void Select(String name) {
+
+// 차량선택
+	public void select() {
 		System.out.println("고르신 차량은 "+name+"입니다.");
 		System.out.println("배기량 : "+cc);
 		System.out.println("중량 : "+vw);
 		System.out.println("색상 : "+color);
 		System.out.println("메이커 : "+maker);
+		System.out.println("------------------");
 	}
+
+// 키보드 조작
 	
-	public void cc(){};
-	public void vw(){};
-//	public abstract void color();
-//	public abstract void maker();
+
+//
+	
+	
 
 }
 // 자바 상속
