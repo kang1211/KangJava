@@ -34,7 +34,6 @@ public class play {
 		System.out.println("드라이브 : 1 | 브레이크 : 2");
 		System.out.println("좌회전 : 3 | 우회전 : 4");
 		
-
 		
 		while(true) {
 			Scanner start = new Scanner(System.in);
