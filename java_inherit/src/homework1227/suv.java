@@ -22,7 +22,7 @@ public class suv extends Rcgame {
 		System.out.println("중량 : "+vw+"kg");
 		System.out.println("색상 : "+color);
 		System.out.println("메이커 : "+maker);
-		System.out.println("구동방식 : "+wd);
+		System.out.println("구동방식 : "+wd+"륜");
 		System.out.println("------------------");
 	}
 	@Override
