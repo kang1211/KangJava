@@ -24,7 +24,7 @@ public class suv extends Rcgame {
 		System.out.println("메이커 : "+maker);
 		System.out.println("구동방식 : "+wd);
 		System.out.println("------------------");
-		
+//		dd
 	}
 	@Override
 	public void speed() {
