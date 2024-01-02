@@ -23,7 +23,7 @@ public class member {
 	public boolean equals(Object o) {
 		
 		member tmp = (member)o;
-		this.name.equals(tmp.name);
+		return this.name.equals(tmp.name);
 	}
 	
 	public String myPhone() {
