@@ -36,6 +36,7 @@ public class map_study1 {
 		System.out.println(hash.containsValue("앙!")); // value 포함여부 확인 메소드 containsValue
 		
 		hash.forEach((key,value) ->{System.out.println(key+"  "+value);}); //key와 value값을 한줄씩 출력하기
+		
 	}
 }
 
