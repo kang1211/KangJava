@@ -11,18 +11,20 @@ public class book implements Comparable<book>{
 		this.writer=writer;
 		this.year=year;
 	}
-	
+//1.-----------------------------------------------------------------------------------
 	@Override
 	public int compareTo(book b) {
 		return this.title.compareTo(b.title)*-1;
 //		return (this.year - b.year)*-1;
 	}
 	
+//2.-----------------------------------------------------------------------------------	
 	@Override
 	public String toString() {
 		return "제목 : "+title+" 저자 : "+writer+" 출간년도 : "+ year+"년";
 	}
 	
+//3.-----------------------------------------------------------------------------------
 	@Override
 	public boolean equals(Object o) {
 		String title = (String)o;
