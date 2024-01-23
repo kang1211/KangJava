@@ -1,11 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
+${emailList[0] }
     
     
 <div id="signup_wrap">
-	<form id="signupFm" method="post" action="/members?cmd=signSave" enctype="multipart/form-data">
-		
+	<form id="signupFm" method="post" action="/members" >
+		<input type="hidden" name="cmd" value="signSave">
 		<div class="myphoto">
 			<div class="photo"></div>
 			<input type="file" name="face" id="face">
@@ -13,28 +14,30 @@
 		</div>
 		
 		<div class="input_data">
-			<label for="email"></label>
-			<input type="email" name="email" id="email">
+			<label for="email">E-MAIL</label>
+			<input type="email" name="email" id="email" required>
+			<sapn class="email_msg"></sapn>
 		</div>
 		<div class="input_data">
 			<label for="pin">PassWord</label>
-			<input type="password" name="pin" id="pin">
+			<input type="password" name="pin" id="pin" required>
 		</div>
 		<div class="input_data">
-			<label for="pin2"></label>
-			<input type="password" id="pin2">
+			<label for="pin2">Check PassWord</label>
+			<input type="password"  id="pin2">
 		</div>
 		<div class="input_data">
-			<label for="name"></label>
+			<label for="name">Name</label>
 			<input type="text" name="name" id="name" required>
 		</div>
 		<div class="input_data">
-			<label for="tel"></label>
+			<label for="tel">Tel.</label>
 			<input type="text" name="tel" id="tel">
 		</div>
 		
-		<div>
+		<div class="signBt">
 			<button type="button" id="bt" class="active inactive" disabled>Sign</button>
 		</div>
+		
 	</form>
 </div>

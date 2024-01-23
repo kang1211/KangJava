@@ -22,8 +22,8 @@
  --%>
  
 <c:set var="part" value="main" scope="page" />
-<c:if test="${part !=null }" >
-	<c:set var="part" value="${part }"/>
+<c:if test="${prt !=null }" >
+	<c:set var="part" value="${prt }"/>
 </c:if>
 
     
@@ -81,12 +81,3 @@
 		
 		xml - xml문서를 생성 조작하기위한 라이브러리
  -->
-
-
-
-
-
-
-
-
-
