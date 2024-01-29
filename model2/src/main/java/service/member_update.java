@@ -19,9 +19,9 @@ public class member_update implements member_action{
 	@Override
 	public String action(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		
-			String path="C:\\Kang\\KangJava\\model2\\src\\main\\webapp\\static\\image";
+		String path="C:\\Kang\\KangJava\\model2\\src\\main\\webapp\\static\\image";
 		// request.getRealPath("/")+"static/image"
-		
+	
 		int size = 1024*1024*20;
 		
 		String face =null;

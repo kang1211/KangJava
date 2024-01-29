@@ -35,4 +35,17 @@
 			
 	});
 	
+	//이미지 미리보기
+		
+		$("#face").on("change",function(event){
+			var file = event.target.files[0];
+			var reader = new FileReader();
+			reader.onload=function(e){
+				$(".photo").css("background", "url("+e.target.result+")");
+				$(".photo").css("background-size","cover");
+				$(".photo").css("background-position","center");
+			};
+			reader.readAsDataURL(file);
+		});
+	
 });
