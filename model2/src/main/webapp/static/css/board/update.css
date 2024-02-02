@@ -29,6 +29,7 @@
 	width:100% !important;
 	height:300px !important;
 	overfloew-y:auto;
+	out-line:none;
 }
 
 #save{

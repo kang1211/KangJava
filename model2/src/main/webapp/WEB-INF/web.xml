@@ -11,22 +11,22 @@
   </welcome-file-list>
   
   <servlet>
-  	<servlet-name>member_cont</servlet-name>
+  	<servlet-name>member_control</servlet-name>
   	<servlet-class>control.member_control</servlet-class>
   </servlet>
   
   <servlet-mapping>
-  	<servlet-name>member_cont</servlet-name>
+  	<servlet-name>member_control</servlet-name>
   	<url-pattern>/members/*</url-pattern>
   </servlet-mapping>
   
   <servlet>
-  	<servlet-name>boardControl</servlet-name>
+  	<servlet-name>board_control</servlet-name>
   	<servlet-class>control.board_control</servlet-class>
   </servlet>
   
   <servlet-mapping>
-  	<servlet-name>boardControl</servlet-name>
+  	<servlet-name>board_control</servlet-name>
   	<url-pattern>*.do</url-pattern>
   </servlet-mapping>
   

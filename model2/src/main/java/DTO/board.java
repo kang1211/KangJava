@@ -8,10 +8,17 @@ public class board {
 	private int member_id;
 	private String title;
 	private String writer;
+	public int getReply_cnt() {
+		return reply_cnt;
+	}
+	public void setReply_cnt(int reply_cnt) {
+		this.reply_cnt = reply_cnt;
+	}
 	private String answer_mail;
 	private String lang;
 	private Date wdate;
 	private String content;
+	private int reply_cnt;
 	
 	public board(int mid, String title, String writer, String answer_mail, String lang, String content) {
 		this.member_id=mid;
@@ -26,6 +33,13 @@ public class board {
 		this.id=id;
 		this.hit=hit;
 		this.wdate=wdate;
+	}
+	public board(int id, int hit, int mid, String title, String writer, String answer_mail, String lang, String content, Date wdate, int cnt) {
+		this(mid, title,  writer, answer_mail, lang, content);
+		this.id=id;
+		this.hit=hit;
+		this.wdate=wdate;
+		this.reply_cnt=cnt;
 	}
 	
 	public int getId() {

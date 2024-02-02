@@ -32,3 +32,53 @@
 }
 .update_del button:nth-child(1){background:#3498db;}
 .update_del button:nth-child(2){background:#e74c3c;}
+/* 댓글 css */
+
+.input_box{
+	width:1000px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:end;
+}
+.input_box textarea{
+	padding:5px;
+	resize:none;
+	font-size:25px;
+}
+#comment{
+	width:100%;
+	height:150px;
+	margin:5px auto;
+}
+.reply_bt, .del_bt{
+	border:none;
+	background-color:white;
+	font-size:15px;
+	cursor:pointer;
+	margin:5px;
+	width:50px;
+	text-align:center;
+}
+.reply_list_box li{
+	width:1000px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:end;
+}
+.reply_info, .reply_comment{
+	width:100%;
+	
+	border-collapse: collapse;
+	margin:5px auto;
+}
+.reply_info{
+	height:30px;
+}
+.reply_comment{
+	height:70px;
+	border: 1px solid gray;
+}
+.reply_comment{
+	padding:10px;
+	font-size:20px;
+}
