@@ -26,9 +26,11 @@ public class Demo {
         SquarePegAdapter largeSqPegAdapter = new SquarePegAdapter(largeSqPeg);
         if (hole.fits(smallSqPegAdapter)) {
             System.out.println("Square peg w2 fits round hole r5.");
-        }
+        }else {
+        	System.out.println("오류입니다");}
         if (!hole.fits(largeSqPegAdapter)) {
             System.out.println("Square peg w20 does not fit into round hole r5.");
-        }
+        }else {
+        	System.out.println("오류입니다");}
     }
 }
