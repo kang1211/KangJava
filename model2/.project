@@ -28,11 +28,4 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/main/webapp/WEB-INF/lib/javax.mail.jar</name>
-			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/Users/dw-027/Downloads/javax.mail.jar</locationURI>
-		</link>
-	</linkedResources>
 </projectDescription>

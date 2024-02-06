@@ -6,17 +6,17 @@ public class reply {
 	private int id;
 	private int board_id;
 	private int member_id;
-	private String comment;
+	private int comment;
 	private String writer;
 	private Date wdate;
 	
 	public reply(int bid, int mid, String comment, String writer) {
 		this.board_id=bid;
 		this.member_id=mid;
-		this.comment=comment;
+//		this.comment=comment;
 		this.writer=writer;
 	}
-	public reply(int id, int bid, String comment, Date wdate, String writer, int mid) {
+	public reply(int id, int bid, int mid, String comment, String writer, Date wdate) {
 		this(bid, mid, comment, writer);
 		this.id=id;
 		this.wdate=wdate;
@@ -41,10 +41,10 @@ public class reply {
 	public void setMember_id(int member_id) {
 		this.member_id = member_id;
 	}
-	public String getComment() {
+	public int getComment() {
 		return comment;
 	}
-	public void setComment(String comment) {
+	public void setComment(int comment) {
 		this.comment = comment;
 	}
 	public String getWriter() {
