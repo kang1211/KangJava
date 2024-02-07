@@ -18,7 +18,7 @@ public class reply_dao extends parent_dao{
 			try {
 				pt=conn.prepareStatement(sql);
 				pt.setInt(1, rp.getBoard_id());
-				pt.setString(2, rp.getComment());
+				pt.setInt(2, rp.getComment());
 				pt.setString(3, rp.getWriter());
 				pt.setInt(4, rp.getMember_id());
 				pt.executeUpdate();
