@@ -56,7 +56,7 @@ public class main_class {
 		System.arraycopy(b,0,c,4,4);
 		System.out.println(Arrays.toString(c));
 		
-		int[] data = {170,168,182,174,175,169,177};
+		int[] data = {176,168,182,174,175,169,177};
 		// data 배열에는 3학년1반의 키가 저장되어 있다.
 		// 키가 175이상만 출력하세요.
 		

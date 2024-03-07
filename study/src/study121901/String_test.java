@@ -15,11 +15,12 @@ public class String_test {
 		
 		System.out.println(orange);
 		
-		String banana = song.substring(song.indexOf("알러지")-4,song.indexOf("알러지")-1);
+//		String banana = song.substring(song.indexOf("알러지")-4,song.indexOf("알러지")-1);
+		String banana = song.substring(3,6);
 		
 		System.out.println(banana);
 		
-		String plus = "상상만 해도 웃음이 나요";
+		String plus = "상상만 해도 웃음이 나요~ ";
 		String finish = plus.concat(song);
 		System.out.println(finish);
 	}

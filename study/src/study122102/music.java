@@ -7,7 +7,7 @@ public class music {
 	String singer; //가수
 	String title; // 제목
 	int playing_time; //재생시간
-	
+	int a;
 	music(){} // 기본 생성자 메서드
 	
 	music(String 가수, String 제목){//매개변수가 있는 생성자 메서드

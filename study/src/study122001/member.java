@@ -22,11 +22,15 @@ public class member {
 		// new member() -> 생성자 메서드 실행
 		num=11;
 		name="장보고";
-		
+		age=34;
 	}
 	
 	public String toString() {
-		return "번호 : " + num+"이름 : "+name+"나이 : "+age;
+		return "번호 : " + num+" 이름 : "+name+" 나이 : "+age;
+	}
+	public static void main(String[] args) {
+		member m = new member();
+		System.out.println(m.toString());
 	}
 }
 

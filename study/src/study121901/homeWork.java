@@ -18,16 +18,18 @@ public class homeWork {
 //1.
 		String song1 = song.replaceAll("#","\n");
 			System.out.println(song1);
+			System.out.println();
+//2.			
 		String[] song2 = song.split("#");
 		for(String sng : song2) 
 			System.out.println(sng);
-//2.		
+//3.		
 		String song3 = song1.replaceAll("당신","그대");
-			System.out.println("\n\n"+song3+"\n");
-//3.
-		String song4 = song1.replaceAll("크리스마스","christmas");
-//			System.out.println(song4.toUpperCase(),"\n\n");
+			System.out.println("\n"+song3+"\n");
 //4.
+		String song4 = song1.replaceAll("크리스마스","christmas");
+			System.out.println(song4.toUpperCase()+"\n");
+//5.
 		String[] song5 = song.split("#");
 		System.out.println(song5[3].trim());
 		

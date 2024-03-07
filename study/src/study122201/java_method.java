@@ -16,7 +16,6 @@ public class java_method {
 		
 		buy(계림);
 		
-		
 	}
 	static void buy( buyer 계림) {
 		while(true) {

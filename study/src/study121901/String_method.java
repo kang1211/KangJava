@@ -31,7 +31,7 @@ public class String_method {
 		System.out.println(k);
 		int banana = word.indexOf("banana");
 		System.out.println(banana);
-		int a5 = word.indexOf('a', 10); // word.indexOf('문자', 시작위
+		int a5 = word.indexOf('a', 5); // word.indexOf('문자', 시작위치)
 		System.out.println(a5);
 		int cha = word.indexOf("ch", 15);
 		System.out.println(cha);
@@ -50,8 +50,8 @@ public class String_method {
 		// [^0-9]
 		// 특수문자제거 [^ㄱ-ㅎㅏ
 		
-		temp = word.replaceAll("a.","c");
-		System.out.println(temp);
+		String tempp = word.replaceAll("a.","z");
+		System.out.println(tempp);
 		
 		temp = "010-1234-5678";
 		temp = temp.replaceAll("[^0-9]","");
@@ -85,14 +85,15 @@ public class String_method {
 		String[] str = word.split(" ");
 		System.out.println(Arrays.toString(str));
 		temp = "010-1234-5678";
-		String pssword = temp.split("-")[2];
+		String password = temp.split("-")[2];
+		System.out.println(password);
 		
 		temp = "1 가 4570";
 		String[] car = temp.split(" ");
 		if(car[2].equals("4570")) {
 			System.out.println("주차비 정산");
 		}else if(car[0].equals("12")) {
-			System.out.println("주차비 정산");
+			System.out.println("주차비 다시");
 		}
 		// 9. 대문자, 소문자 변환 - toLowerCase(), toUpperCase()
 			temp = word.toUpperCase();

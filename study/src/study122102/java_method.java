@@ -22,14 +22,14 @@ public class java_method {
 //			if(mylist.singer.equals(keyword) || mylist.title.equals(keyword)){
 //				System.out.println(mylist);
 //				issong=true;
-			}
+				}
 			}
 		if(!issong)
 			System.out.println("검색결과없음");
 }
 	
 	static Scanner scan = new Scanner(System.in);
-	
+//-------------------------------------------------------------------------------------------	
 	public static void main(String[] args) {
 	
 		music[] mylist = new music[] {

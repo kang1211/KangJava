@@ -17,6 +17,7 @@ public class buyer {
 		this.member_num=num;
 	}
 	
+// 장바구니 목록-----------------------------------------------------------------------------------------------
 	@Override
 	public String toString() {
 		String out ="\n============ 장바구니 ===============\n"+
@@ -29,6 +30,7 @@ public class buyer {
 		return out;
 	}
 	
+// 장바구니 총 금액-----------------------------------------------------------------------------------------------
 	String total_price() {
 		//장바구니에 담겨있는 물건의 총금액 구하고 천단위 콤마로 변환하여 return 하세요
 		int total=0;
@@ -40,6 +42,7 @@ public class buyer {
 		return df.format(total)+"원";
 	}
 	
+// 장바구니 추가-----------------------------------------------------------------------------------------------	
 	void basket_add( mart item ) {
 		if( cnt >= 1) {
 			mart[] temp = new mart[ basket.length + 1 ];//기존 배열보다 1 더많은 배열생성
@@ -53,13 +56,15 @@ public class buyer {
 		cnt++;
 	}
 	
+// 장바구니 결제금액 알림 -----------------------------------------------------------------------------------------------
 	void payment() { // 장바구니의 물건 전부 구입, 비용 지불, basket배열 비우기  
 		expend =  Integer.parseInt( total_price().replaceAll("[^0-9]", "") );
 		
 		System.out.println( "결제 금액은 "+total_price()+" 입니다.");
 		basket=null; // 장바구니 비우기
 	}
-	
+
+// 장바구니 제거 -----------------------------------------------------------------------------------------------	
 	void basket_remove() {
 		
 		Scanner scan = new Scanner(System.in);
