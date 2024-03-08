@@ -4,6 +4,7 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class buyer {
+	
 	int member_num; //회원번호
 	String member_name; //회원 이름
 	int expend; // 지불금액
@@ -12,6 +13,7 @@ public class buyer {
 	
 	
 	buyer(){}
+	
 	buyer(int num, String name){
 		this.member_name=name;
 		this.member_num=num;
@@ -23,10 +25,12 @@ public class buyer {
 		String out ="\n============ 장바구니 ===============\n"+
 				"회원번호 : "+member_num+"  회원명 : "+member_name+"\n"+
 	                  "장바구니 목록 \n";
+		
 		for(int i=0; i<basket.length; i++) {
 			out += (i+1)+". "+basket[i] +"\n";
 		}
 		out += "총 결제 금액 : "+ total_price();
+		
 		return out;
 	}
 	
@@ -80,6 +84,8 @@ public class buyer {
 			temp[i] = basket[i];
 		}
 		basket=temp;
+		//장바구니 공간 감소
+		cnt --;
 	}
 	
 	
